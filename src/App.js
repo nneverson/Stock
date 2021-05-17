@@ -12,9 +12,9 @@ function App({StockData}) {
 
     return <div>
         <nav>
-          <Link to="/stocks">Home</Link>
+          <Link to="/stocks">Home</Link> <br/>
           <Link to="/about">About</Link>
-        </nav>
+        </nav> <br/>
         <main>
           <Route path="/stocks" exact render={() => <Home stocks={data} />} />
           <Route path="/stocks/:symbol" render={symbols => <Stocks match={symbols.match} stocks={data} />} />
